@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#fff, $accent);
+
+    &__copy {
+
+        img {
+            height: 10em;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.cta {
+    height: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__copy {
+        padding: 4em;
+        text-align: center;
+    }
+
+    .hero__lines {
+        width: 600px;
+        height: 500px;
+        right: .5;
+    }
+
+}

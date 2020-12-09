@@ -1,0 +1,23 @@
+.mission {
+
+    &__copy {
+        color: $off-white;
+        background-color: $secondary;
+        padding: 3em;
+    }
+    &__outcomes {
+        //color: $off-white;
+        background-color: $accent;
+        padding: 3em;
+
+        &__wins {
+            display: flex;
+            flex-wrap: wrap;
+
+            &__win {
+                max-width: 24em;
+                margin-right: 1.5em;
+            }
+        }
+    }
+}
