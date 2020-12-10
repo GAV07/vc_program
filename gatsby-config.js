@@ -9,7 +9,7 @@ module.exports = {
               },
               custom: {
                   families: 'Jakarta Sans',
-                  urls: 'static/fonts'
+                  urls: './style/fonts'
               }
             }
         },

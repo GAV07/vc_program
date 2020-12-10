@@ -1,9 +1,9 @@
 {
-  "name": "riseby-",
+  "name": "vc-in-residence",
   "version": "1.0.0",
   "private": true,
-  "description": "My Gatsby site",
-  "author": "Erick",
+  "description": "Landing page for vc in resdience program at the Center for Black Innovation",
+  "author": "Erick Gavin",
   "keywords": [
     "gatsby"
   ],

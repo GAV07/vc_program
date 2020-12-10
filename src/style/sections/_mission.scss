@@ -6,7 +6,6 @@
         padding: 3em;
     }
     &__outcomes {
-        //color: $off-white;
         background-color: $accent;
         padding: 3em;
 
@@ -15,7 +14,7 @@
             flex-wrap: wrap;
 
             &__win {
-                max-width: 24em;
+                max-width: 35em;
                 margin-right: 1.5em;
             }
         }

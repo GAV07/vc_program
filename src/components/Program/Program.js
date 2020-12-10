@@ -1,5 +1,6 @@
 import React from 'react'
-import { makeStyles, Paper, Typography } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles'
+import { Paper, Typography } from '@material-ui/core'
 import {Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineOppositeContent, TimelineDot} from '@material-ui/lab'
 import {FaDesktop} from 'react-icons/fa'
 
@@ -7,10 +8,15 @@ const useStyles = makeStyles((theme) => ({
     paper: {
       padding: '1em 2em',
     },
-    secondaryTail: {
-      //backgroundColor: theme.palette.secondary.main,
+    dot: {
+      backgroundColor: "#0FB5BB",
+    //   height: "2em",
+    //   width: "2em"
     },
-}));
+    line: {
+      backgroundColor: "#0FB5BB",
+    },
+}))
 
 const data = [
     {
@@ -56,6 +62,8 @@ const data = [
 ]
 
 const Item = ({name, week, content}) => {
+
+    const classes = useStyles()
     
     return (
         <TimelineItem>
@@ -65,13 +73,13 @@ const Item = ({name, week, content}) => {
                 </Typography>
             </TimelineOppositeContent>
             <TimelineSeparator>
-                <TimelineDot>
-                    <FaDesktop />
+                <TimelineDot className={classes.dot}>
+                    {/* <FaDesktop /> */}
                 </TimelineDot>
-                <TimelineConnector />
+                <TimelineConnector className={classes.line} />
             </TimelineSeparator>
             <TimelineContent>
-                <Paper elevation={3}>
+                <Paper elevation={3} className={classes.paper}>
                     <Typography variant="h6" component="h1">
                         {name}
                     </Typography>
@@ -83,7 +91,6 @@ const Item = ({name, week, content}) => {
 }
 
 const Program = () => {
-    //const classes = useStyles()
 
     return ( 
        <Timeline align="alternate">

@@ -1,11 +1,12 @@
 .hero {
     display: flex;
     padding: 0;
+    flex-wrap: wrap;
 
     &__copy {
-        max-width: 30em;
-        padding: 3em;
-        margin-right: 2em;
+        max-width: 35em;
+        padding: 3em 3em 3em 8em;
+        margin-right: 10em;
     }
     
     &__logo {

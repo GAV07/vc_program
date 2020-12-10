@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import gsap from 'gsap'
-//gsap.registerPlugin()
 
 const Lines = () => {
     
@@ -11,8 +10,8 @@ const Lines = () => {
             gsap.fromTo(el, 
                 { strokeDashoffset: l }, 
                 {
-                    duration: 2,
-                    stagger: .3,
+                    duration: gsap.utils.random(5, 7),
+                    stagger: .5,
                     strokeDashoffset: 0,
                     repeat: -1,
                     yoyo: true
