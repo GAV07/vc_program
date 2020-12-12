@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Paper, Typography } from '@material-ui/core'
 import {Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineOppositeContent, TimelineDot} from '@material-ui/lab'
-import {FaDesktop} from 'react-icons/fa'
+//import {FaDesktop} from 'react-icons/fa'
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -46,7 +46,7 @@ const data = [
     },
     {
         "week": "Week 6",
-        "name": "Fundraising/Financing",
+        "name": "Financing",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis eleifend. Porta nibh venenatis cras sed."
     },
     {
@@ -79,7 +79,31 @@ const Item = ({name, week, content}) => {
                 <TimelineConnector className={classes.line} />
             </TimelineSeparator>
             <TimelineContent>
-                <Paper elevation={3} className={classes.paper}>
+                <Paper elevation={1} className={classes.paper}>
+                    <Typography variant="h6" component="h1">
+                        {name}
+                    </Typography>
+                    <Typography>{content}</Typography>
+                </Paper>
+            </TimelineContent>
+        </TimelineItem>
+    )
+}
+
+const ItemMobile = ({name, week, content}) => {
+
+    const classes = useStyles()
+    
+    return (
+        <TimelineItem>
+            <TimelineSeparator>
+                <TimelineDot className={classes.dot}>
+                </TimelineDot>
+                <TimelineConnector className={classes.line} />
+            </TimelineSeparator>
+            <TimelineContent>
+                <Paper elevation={1
+                } className={classes.paper}>
                     <Typography variant="h6" component="h1">
                         {name}
                     </Typography>
@@ -92,22 +116,69 @@ const Item = ({name, week, content}) => {
 
 const Program = () => {
 
-    return ( 
-       <Timeline align="alternate">
-        {
-            data.map((module) => {
-                return (
-                    <Item
-                        key={module.name} 
-                        name={module.name}
-                        week={module.week}
-                        content={module.content}
-                    />
-                ) 
-            })
-        }     
-       </Timeline> 
-    )
+    const [isDesktop, setIsDesktop] = useState(false)
+    const [isMobile, setIsMobile] = useState(false)
+
+    useEffect(() => {
+        if (window.innerWidth > 769) {
+          setIsDesktop(true);
+          setIsMobile(false);
+        } else {
+          setIsMobile(true);
+          setIsDesktop(false);
+        }
+          
+    }, [])
+
+    if (isDesktop) {
+        return ( 
+            <section className="program">
+                <div className="program__copy">
+                    <h2>Program Schedule</h2>
+                    <p>Our program is broken into 8 weeks that focus on preparing you not only for VC funding but maximizing cusomter revenue so you can keep everything that you make.</p>
+                </div>
+                <Timeline align="alternate">
+                {
+                    data.map((module) => {
+                        return (
+                            <Item
+                                key={module.name} 
+                                name={module.name}
+                                week={module.week}
+                                content={module.content}
+                            />
+                        ) 
+                    })
+                }     
+                </Timeline>
+            </section> 
+         )
+    } else {
+        return (
+            <section className="program">
+                <div className="program__copy">
+                    <h2>Program Schedule</h2>
+                    <p>Our program is broken into 8 weeks that focus on preparing you not only for VC funding but maximizing cusomter revenue so you can keep everything that you make.</p>
+                </div>
+                <Timeline>
+                {
+                    data.map((module) => {
+                        return (
+                            <ItemMobile
+                                key={module.name} 
+                                name={module.name}
+                                week={module.week}
+                                content={module.content}
+                            />
+                        ) 
+                    })
+                }     
+                </Timeline>
+            </section>  
+         )
+    }
+
+    
 }
 
 export default Program

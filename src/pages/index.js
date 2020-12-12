@@ -5,6 +5,7 @@ import Mission from "../components/Mission/Mission"
 import Program from "../components/Program/Program"
 import CTA from "../components/CTA"
 import Footer from "../components/Footer"
+import FAQ from "../components/FAQ"
 //import Header from "../components/Header"
 
 
@@ -15,6 +16,7 @@ const IndexPage = () => {
       <Hero />
       <Mission />
       <Program />
+      <FAQ />
       <CTA />
       <Footer />
     </main>

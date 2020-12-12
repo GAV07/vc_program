@@ -1,0 +1,26 @@
+.program {
+    background: linear-gradient(#fff, $accent); 
+
+    &__copy {
+        padding-left: 2em;
+        width: 60vw;
+
+        @include respond(phone) {
+            padding-top: 2em;
+            width: 80vw;
+        }
+    }
+
+    .MuiTimeline-root {
+        @include respond(phone) {
+            padding: 2em;
+        }
+    }
+
+    .MuiTimelineItem-missingOppositeContent:before {
+        @include respond(phone) {
+            flex: 0;
+            padding: 0;
+        }
+    }
+}

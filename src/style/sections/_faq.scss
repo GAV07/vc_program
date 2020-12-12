@@ -1,0 +1,31 @@
+.faq {
+    background: linear-gradient($accent, #fff);
+    &__copy {
+        padding-left: 2em;
+    }
+
+    &__set {
+        padding: 2em 20em 0 20em;
+        margin: 2em 0 2em 0;
+
+        @include respond(phone) {
+            padding: 2em 3em 0 2em;
+        }
+
+        h3 {
+            margin-top: 1em;
+        }
+    }
+
+    &__set::before {
+        display: inline-block;
+        content: "";
+        width: 30em;
+        border-top: solid 1px;
+        position: absolute;
+        
+        @include respond(phone) {
+            width: 100%;
+        }
+    }
+}

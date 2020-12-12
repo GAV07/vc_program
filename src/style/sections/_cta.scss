@@ -3,16 +3,38 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    margin: 3em 0 3em 0;
 
     &__copy {
         padding: 4em;
         text-align: center;
+
+        h2 {
+            @include respond(phone) {
+                margin-top: 0;
+                font-size: $mid-phone-size;
+            }
+        }
+
+        img {
+            @include respond(phone) {
+                width: 18em;
+            }
+        }
     }
 
     .hero__lines {
-        width: 600px;
-        height: 500px;
-        right: .5;
+        width: 30em;
+        height: 30em;
+        opacity: .7;
+        left: 10vw;
+
+        @include respond(phone) {
+            
+        }
     }
+
+
 
 }

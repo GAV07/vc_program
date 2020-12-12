@@ -9,10 +9,23 @@
         
         p {
             font-size: $sm-font-size;
+
+            @include respond(phone) {
+                font-size: $sm-phone-size;
+                text-align: center;
+                justify-items: center;
+                
+            }
         }
 
         img {
             height: 8em;
+
+            @include respond(phone) {
+                height: 4em;
+            }
         }
+
+        
     }
 }

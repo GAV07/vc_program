@@ -3,13 +3,31 @@
     padding: 0;
     flex-wrap: wrap;
 
+    @include respond(phone) {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        height: 85vh;
+    }
+
     &__copy {
         max-width: 35em;
-        padding: 3em 3em 3em 8em;
+        padding: 15em 3em 3em 8em;
         margin-right: 10em;
+
+        @include respond(phone) {
+            max-width: 15em;
+            padding: 1em;
+            margin: 0;
+        }
     }
     
     &__logo {
+        padding: 7em 0 0 0;
+
+        @include respond(phone) {
+            width: 6em;
+            padding: 2em;
+        }
 
         svg {
             width: 100%;
@@ -23,5 +41,11 @@
         position: absolute;
         z-index: -1;
         opacity: .3;
+
+        @include respond(phone) {
+            opacity: .5;
+            top: -5vh;
+            left: -10vw;
+        }
     }
 }

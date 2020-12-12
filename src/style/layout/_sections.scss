@@ -1,11 +1,35 @@
 // Section
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+}
+
 section {
-    padding: 5rem 5rem;
-  
+    padding: 3em;
+    overflow-x: hidden;
+
     @include respond(phone) {
-      border: none;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding: 0;
+    }
+
+    h1 {
+      margin: 0;
+
+      @include respond(phone) {
+          font-size: $big-phone-size;
+      }
+    }
+
+    p {
+        @include respond(phone) {
+            font-size: $mid-phone-size;
+        }
     }
   }
   
