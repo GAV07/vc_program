@@ -12,6 +12,7 @@
     }
 
     .MuiTimeline-root {
+        padding: 2em 4em 1em 4em;
         @include respond(phone) {
             padding: 2em;
         }

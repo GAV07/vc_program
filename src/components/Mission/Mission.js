@@ -1,36 +1,43 @@
 import React from 'react'
-import {FaDesktop} from 'react-icons/fa'
+import {FaDesktop, FaMicrophone, FaFileInvoiceDollar, FaRoute} from 'react-icons/fa'
 import Win from './Win'
+//import Background from '../../images/black.jpg'
+
+// const style = {
+//     backgroundImage: `url(${Background})`
+// }
 
 const Mission = () => {
     return (
        <section className="mission">
             <div className="mission__copy">
                 <h2>Mission</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat pretium nibh ipsum consequat nisl vel. Faucibus pulvinar elementum integer enim neque volutpat ac. Fames ac turpis egestas sed. Tincidunt ornare massa eget egestas purus viverra accumsan. Est placerat in egestas erat imperdiet sed.</p>
+                <p>
+                    The VC-in-Residence program is an inclusive entrepreneurship initiative that seeks to increase the number  of minority-founded, venture-backed, high-growth businesses in the U.S. by identifying, cultivating and  showcasing minority entrepreneurial talent; connecting this talent to investment opportunities;  identifying and cultivating potential minority accredited investors; connecting minority accredited  investors to local capital markets; and making targeted ecosystems inclusive and connected nationally. 
+                </p>
             </div>
             <div className="mission__outcomes">
                 <h2> Investor Readiness</h2>
                 <div className="mission__outcomes__wins">
                     <Win 
                         icon= {<FaDesktop />}
-                        name = "Website"
-                        details = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ante metus dictum at tempor commodo."
+                        name = "Acquire your Digital Real Estate"
+                        details = "We help our ventures create or improve websites that help promote and/or sell their products or services."
                     />
                     <Win 
-                        icon= {<FaDesktop />}
-                        name = "Market Strategy"
-                        details = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ante metus dictum at tempor commodo."
+                        icon= {<FaRoute />}
+                        name = "Expand your Market Strategy"
+                        details = "Ventures who complete this program will walk out with a go to market strategy specific to their audience and a comprehensive digital marketing plan to make sure their audience feels their presence."
                     />
                     <Win 
-                        icon= {<FaDesktop />}
-                        name = "Pitch Deck"
-                        details = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ante metus dictum at tempor commodo."
+                        icon= {<FaMicrophone />}
+                        name = "Go beyond a Pitch Deck"
+                        details = "Pitching is only one part of the equation, we make sure you learn how to build relationships with investors."
                     />
                     <Win 
-                        icon= {<FaDesktop />}
-                        name = "Business Plan"
-                        details = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ante metus dictum at tempor commodo."
+                        icon= {<FaFileInvoiceDollar />}
+                        name = "Build a Business Foundation"
+                        details = "A business plan is no longer enough to set a business up for success. Entrepreneurs must learn how to integrate data and technology to leverage more growth."
                     />
                 </div>
             </div>

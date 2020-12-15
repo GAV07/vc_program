@@ -7,57 +7,60 @@ import {Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineCo
 const useStyles = makeStyles((theme) => ({
     paper: {
       padding: '1em 2em',
+      backgroundColor: "#EFF9FB",
+      color: "#323131"
     },
     dot: {
       backgroundColor: "#0FB5BB",
-    //   height: "2em",
-    //   width: "2em"
     },
     line: {
       backgroundColor: "#0FB5BB",
     },
+    title: {
+        color: "#0FB5BB",
+    }
 }))
 
 const data = [
     {
         "week": "Week 1",
-        "name": "Business Model",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis eleifend. Porta nibh venenatis cras sed."
+        "name": "Securing your Business Model",
+        "content": "Explore the basics of launching and scaling your startup. We’ll cover the fundamentals of business and explore business models being leveraged by startups across the globe."
     },
     {
         "week": "Week 2",
-        "name": "Narrative",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis eleifend. Porta nibh venenatis cras sed."
+        "name": "Crafting a Narrative",
+        "content": "Win hearts, minds, and dollars with a compelling pitch and narrative for your venture. During this week entrepreneurs will learn how to craft their personal and startup narrative. "
     },
     {
         "week": "Week 3",
-        "name": "Product/Service",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis eleifend. Porta nibh venenatis cras sed."
+        "name": "Building a Boss Product/Service",
+        "content": "Being in business is all about building products your users love! We’ll explore the basics of product development, design, customer feedback, and iteration."
     },
     {
         "week": "Week 4",
-        "name": "Marketing/Growth",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis eleifend. Porta nibh venenatis cras sed."
+        "name": "Acquiring Customers",
+        "content": "This week is all about refining your brand’s unique value proposition and creating strategies to marketing that idea to the world."
     },
     {
         "week": "Week 5",
-        "name": "Operations",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis eleifend. Porta nibh venenatis cras sed."
+        "name": "Business Ops 101",
+        "content": "From hiring to project management. Managing your operations sets your business up for greater success. We’ll be talking about building teams, management and leveraging data in your business."
     },
     {
         "week": "Week 6",
-        "name": "Financing",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis eleifend. Porta nibh venenatis cras sed."
+        "name": "Generating Financing Options",
+        "content": "Accessing funding for your ideas will help lay the foundation for your success. We’ll cover due diligence, meeting investors, and negotiating equity."
     },
     {
         "week": "Week 7",
-        "name": "Industry Unique",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis eleifend. Porta nibh venenatis cras sed."
+        "name": "Diving into your Industry",
+        "content": "Advantages for our businesses lie in understanding the contours of the industries we operate within. We will provide resources and advisors to help guide you into deeper domain knowledge depending on your chosen industry."
     },
     {
         "week": "Week 8",
-        "name": "Final",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis eleifend. Porta nibh venenatis cras sed."
+        "name": "Show Week",
+        "content": "We have put in a lot of work these last few weeks getting up to speed with every aspect of our business now it time to execute on your business and market strategy!"
     },
 ]
 
@@ -79,8 +82,8 @@ const Item = ({name, week, content}) => {
                 <TimelineConnector className={classes.line} />
             </TimelineSeparator>
             <TimelineContent>
-                <Paper elevation={1} className={classes.paper}>
-                    <Typography variant="h6" component="h1">
+                <Paper elevation={0} className={classes.paper}>
+                    <Typography className={classes.title} variant="h6" component="h1">
                         {name}
                     </Typography>
                     <Typography>{content}</Typography>
@@ -102,8 +105,10 @@ const ItemMobile = ({name, week, content}) => {
                 <TimelineConnector className={classes.line} />
             </TimelineSeparator>
             <TimelineContent>
-                <Paper elevation={1
-                } className={classes.paper}>
+                <Paper elevation={0} className={classes.paper}>
+                    <Typography variant="body2" color="textSecondary">
+                        {week}
+                    </Typography>
                     <Typography variant="h6" component="h1">
                         {name}
                     </Typography>

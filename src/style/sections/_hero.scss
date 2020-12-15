@@ -6,12 +6,11 @@
     @include respond(phone) {
         flex-wrap: wrap-reverse;
         justify-content: center;
-        height: 85vh;
     }
 
     &__copy {
         max-width: 35em;
-        padding: 15em 3em 3em 8em;
+        padding: 10em 3em 3em 8em;
         margin-right: 10em;
 
         @include respond(phone) {
@@ -19,6 +18,19 @@
             padding: 1em;
             margin: 0;
         }
+
+        #name {
+            margin: 0;
+        }
+
+        p {
+            margin-bottom: 1.5em;
+        }
+
+        &__dates {
+            color: $primary;
+        }
+
     }
     
     &__logo {
@@ -41,6 +53,7 @@
         position: absolute;
         z-index: -1;
         opacity: .3;
+        right: -30vw;
 
         @include respond(phone) {
             opacity: .5;

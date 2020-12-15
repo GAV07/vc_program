@@ -6,13 +6,14 @@ import Program from "../components/Program/Program"
 import CTA from "../components/CTA"
 import Footer from "../components/Footer"
 import FAQ from "../components/FAQ"
+import SEO from "../components/SEO"
 //import Header from "../components/Header"
 
 
-// markup
 const IndexPage = () => {
   return (
-    <main >
+    <main className="home">
+      <SEO />
       <Hero />
       <Mission />
       <Program />

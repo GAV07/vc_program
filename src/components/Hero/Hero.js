@@ -5,14 +5,18 @@ const Hero = () => {
     return (
         <section className="hero">
             <div className="hero__copy">
-                <h1>VC in Residence Program</h1>
+                <p id="name">Center for Black Innovation</p>
+                <h1>Your Ideas. Accelerated.</h1>
                 <p>
-                    If we want to make an impact on the lack of diversity 
-                    in technology we can’t have a talented 10th mentality.
+                    CFBI is seeking talented black founders to join the first cohort of our pre-accelerator program.  
                 </p>
-                <p >
+                <p>
+                    Application deadline: <br/> <span className="hero__copy__dates">Feb 10, 2021</span> <br/>
+                    Program Date: <br/> <span className="hero__copy__dates">Feb 22 – April 16</span> 
+                </p>
+                <p>
                     <span className="cta-btn">
-                        <a href="typeform link">Sign Up</a>
+                        <a href="https://cfbi.typeform.com/to/orjd49ub">Apply Now</a>
                     </span>
                 </p>
             </div>

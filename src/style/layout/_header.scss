@@ -1,0 +1,29 @@
+.header {
+    height: 10vh;
+    overflow: hidden;
+
+    &__bk {
+        position: absolute;
+        width: 100%;
+        background: linear-gradient($accent, #fff);
+    }
+
+    &__nav {
+        position: absolute;
+        width: 100vw;
+        padding: 1em 0 1em 0;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+
+        a {
+            margin: 0 1em 0 1em;
+            color: $primary;
+            font-size: $default-font-size;
+
+            @include respond(phone) {
+                font-size: $mid-phone-size;
+            }
+        }
+    }
+}

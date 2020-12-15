@@ -3,6 +3,7 @@
     &__copy {
         color: $off-white;
         background-color: $secondary;
+        background-size: cover;
         padding: 3em;
     }
     &__outcomes {
@@ -12,10 +13,15 @@
         &__wins {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
 
             &__win {
                 max-width: 35em;
-                margin-right: 1.5em;
+                margin-right: 2em;
+
+                .space {
+                    margin-right: .5em;
+                }
             }
         }
     }
