@@ -22,11 +22,9 @@ module.exports = {
             }
         },
         {
-          resolve: `gatsby-plugin-google-gtag`,
+          resolve: `gatsby-plugin-google-analytics`,
           options: {
-            trackingIds: [
-              "G-EBXZQ2B6YJ"
-            ],
+              trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
           }
         },
     ]
