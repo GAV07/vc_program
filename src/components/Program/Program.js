@@ -29,23 +29,23 @@ const data = [
     },
     {
         "week": "Week 2",
-        "name": "Crafting a Narrative",
-        "content": "Win hearts, minds, and dollars with a compelling pitch and narrative for your venture. During this week entrepreneurs will learn how to craft their personal and startup narrative. "
-    },
-    {
-        "week": "Week 3",
         "name": "Building a Boss Product/Service",
         "content": "Being in business is all about building products your users love! We’ll explore the basics of product development, design, customer feedback, and iteration."
     },
     {
-        "week": "Week 4",
+        "week": "Week 3",
         "name": "Acquiring Customers",
         "content": "This week is all about refining your brand’s unique value proposition and creating strategies to marketing that idea to the world."
     },
     {
-        "week": "Week 5",
+        "week": "Week 4",
         "name": "Business Ops 101",
         "content": "From hiring to project management. Managing your operations sets your business up for greater success. We’ll be talking about building teams, management and leveraging data in your business."
+    },
+    {
+        "week": "Week 5",
+        "name": "Crafting a Narrative",
+        "content": "Win hearts, minds, and dollars with a compelling pitch and narrative for your venture. During this week entrepreneurs will learn how to craft their personal and startup narrative. "
     },
     {
         "week": "Week 6",
