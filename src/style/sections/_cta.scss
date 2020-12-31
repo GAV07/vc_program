@@ -20,6 +20,9 @@
         }
 
         img {
+            @include respond(tab-port) {
+                width: 30em;
+            }
             @include respond(phone) {
                 width: 18em;
             }
@@ -31,6 +34,13 @@
         height: 30em;
         opacity: .7;
         left: 10vw;
+
+        @include respond(phone) {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 5vh;
+        }
     }
 
 }
