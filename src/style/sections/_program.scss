@@ -16,6 +16,9 @@
         @include respond(phone) {
             padding: 2em;
         }
+        @include respond(tab-land) {
+            padding: 2em;
+        }
     }
 
     .MuiTimelineItem-missingOppositeContent:before {

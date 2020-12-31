@@ -1,4 +1,5 @@
 import React from 'react'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Lines from './Hero/Lines'
 import logo from '../images/logo.png'
 
@@ -10,7 +11,7 @@ const CTA = () => {
                 <h2>Your business has potential. <br/> Let us help you unlock it!</h2>
                 <p>
                     <span className="cta-btn">
-                        <a href="https://cfbi.typeform.com/to/orjd49ub">Apply Now</a>
+                        <OutboundLink href="https://cfbi.typeform.com/to/orjd49ub">Apply Now</OutboundLink>
                     </span>
                 </p>
             </div>

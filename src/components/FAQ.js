@@ -1,4 +1,6 @@
 import React from 'react'
+import { Accordion, AccordionSummary, AccordionDetails } from '@material-ui/core'
+import { MdExpandMore } from 'react-icons/md'
 
 const data = [
     {
@@ -22,7 +24,7 @@ const data = [
         "answer": "The Center for Black Innovation does not take equity nor provide funding for startups that participate in our pre-acelerator program."
     },
     {
-        "question":"Is this a virtual program",
+        "question":"Is this program completely virtual?",
         "answer": "Yes. All programming will be facilitated virtually."
     },
     {
@@ -35,6 +37,7 @@ const data = [
     },
 ]
 
+
 const FAQ = () => {
 
     return (
@@ -43,16 +46,18 @@ const FAQ = () => {
                 <h2>FAQ</h2>
                 <p>Below are a list of frequently asked question </p>
             </div>
-            {
-                data.map((set) => {
-                    return (
-                        <div key={set.question} className="faq__set">
-                            <h3>{set.question}</h3>
-                            <p>{set.answer}</p>
-                        </div>
-                    )
-                })
-            }
+            <div className="faq__block">
+                {
+                    data.map((set) => {
+                        return (
+                            <Accordion key={set.question} >
+                                <AccordionSummary expandIcon={<MdExpandMore />}><h3>{set.question}</h3></AccordionSummary>
+                                <AccordionDetails><p>{set.answer}</p></AccordionDetails>
+                            </Accordion>
+                        )
+                    })
+                }
+            </div>
         </section>
     )
 }

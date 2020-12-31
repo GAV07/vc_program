@@ -1,7 +1,9 @@
 import React from 'react'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Lines from './Lines'
 
 const Hero = () => {
+
     return (
         <section className="hero">
             <div className="hero__copy">
@@ -16,7 +18,7 @@ const Hero = () => {
                 </p>
                 <p>
                     <span className="cta-btn">
-                        <a href="https://cfbi.typeform.com/to/orjd49ub">Apply Now</a>
+                        <OutboundLink href="https://cfbi.typeform.com/to/orjd49ub">Apply Now</OutboundLink>
                     </span>
                 </p>
             </div>

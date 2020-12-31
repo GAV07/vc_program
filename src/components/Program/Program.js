@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Paper, Typography } from '@material-ui/core'
 import {Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineOppositeContent, TimelineDot} from '@material-ui/lab'
-//import {FaDesktop} from 'react-icons/fa'
 
-const useStyles = makeStyles((theme) => ({
+
+const useStyles = makeStyles(() => ({
     paper: {
       padding: '1em 2em',
       backgroundColor: "#EFF9FB",
@@ -59,7 +59,7 @@ const data = [
     },
     {
         "week": "Week 8",
-        "name": "Show Week",
+        "name": "Grow Week",
         "content": "We have put in a lot of work these last few weeks getting up to speed with every aspect of our business now it time to execute on your business and market strategy!"
     },
 ]

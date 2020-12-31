@@ -3,30 +3,46 @@
 
     &__copy {
         padding-left: 2em;
-    }
-
-    &__set {
-        padding: 2em 20em 0 20em;
-        margin: 2em 0 2em 0;
 
         @include respond(phone) {
-            padding: 2em 3em 0 2em;
+            padding-right: 1em;
+        }
+    }
+
+    &__block {
+        padding: 2em 10em 2em 10em;
+
+        @include respond(phone) {
+            padding: 0 1em 1em 1em;
+        }
+        @include respond(tab-land) {
+            padding: 0 1em 1em 1em;
         }
 
         h3 {
-            margin-top: 1em;
+            @include respond(phone) {
+                font-size: $mid-phone-size;
+            }
         }
+
+        .MuiAccordionSummary-root {
+            padding: .5em 2em .5em 2em;
+        }
+        .MuiAccordionDetails-root {
+            padding: 0 20em 1em 2em;
+
+            @include respond(phone) {
+                padding: 0 2em 1em 2em;
+            }
+        }
+        .MuiAccordionSummary-content.Mui-expanded {
+            h3 {
+                border-bottom: 1px solid;
+                padding-bottom: 1.5em;
+                margin: 0;
+            }
+        }
+        
     }
 
-    &__set::before {
-        display: inline-block;
-        content: "";
-        width: 30em;
-        border-top: solid 1px;
-        position: absolute;
-        
-        @include respond(phone) {
-            width: 10em;
-        }
-    }
 }

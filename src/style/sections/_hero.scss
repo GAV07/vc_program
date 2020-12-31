@@ -19,6 +19,12 @@
             margin: 0;
         }
 
+        @include respond(tab-land) {
+            max-width: 25em;
+            padding: 10em 3em 3em 5em;
+            margin: 0;
+        }
+
         #name {
             margin: 0;
         }
@@ -40,6 +46,10 @@
         @include respond(phone) {
             width: 6em;
             padding: 2em;
+        }
+        @include respond(tab-land) {
+            width: 15em;
+            padding: 0 0 0 10em;
         }
 
         svg {
