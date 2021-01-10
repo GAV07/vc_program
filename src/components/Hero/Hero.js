@@ -13,8 +13,8 @@ const Hero = () => {
                     CFBI is seeking talented black founders to join the first cohort of our pre-accelerator program.  
                 </p>
                 <p>
-                    Application deadline: <br/> <span className="hero__copy__dates">Feb 10, 2021</span> <br/>
-                    Program Date: <br/> <span className="hero__copy__dates">Feb 22 – April 16</span> 
+                    {/* Application deadline: <br/> <span className="hero__copy__dates">Feb 10, 2021</span> <br/> */}
+                    Program Start: <br/> <span className="hero__copy__dates">April 2021</span> 
                 </p>
                 <p>
                     <span className="cta-btn">
