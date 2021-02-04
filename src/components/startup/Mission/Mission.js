@@ -1,23 +1,18 @@
 import React from 'react'
 import {FaDesktop, FaMicrophone, FaFileInvoiceDollar, FaRoute} from 'react-icons/fa'
 import Win from './Win'
-//import Background from '../../images/black.jpg'
-
-// const style = {
-//     backgroundImage: `url(${Background})`
-// }
 
 const Mission = () => {
     return (
        <section className="mission">
             <div className="mission__copy">
-                <h2>Mission</h2>
+                <h2>We guide entrepreneurs through pathways to capital</h2>
                 <p>
-                    The VC-in-Residence program is an inclusive entrepreneurship initiative that seeks to increase the number  of minority-founded, venture-backed, high-growth businesses in the U.S. by identifying, cultivating and  showcasing minority entrepreneurial talent; connecting this talent to investment opportunities;  identifying and cultivating potential minority accredited investors; connecting minority accredited  investors to local capital markets; and making targeted ecosystems inclusive and connected nationally. 
+                    The VCIR Pre-Accelerator is a program meant to level up the founders who have ventures they are passionate about.
+                    Before founders are ready to have capital conversations, their business must learn how to operate pre-capital.
                 </p>
             </div>
             <div className="mission__outcomes">
-                <h2> Investor Readiness</h2>
                 <div className="mission__outcomes__wins">
                     <Win 
                         icon= {<FaDesktop />}

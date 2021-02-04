@@ -1,25 +1,33 @@
-@font-face {
-  font-family: 'Jakarta';
-  src: url('./fonts/Jakarta/PlusJakartaDisplay-Bold.otf');
-}
+@import "~@fontsource/plus-jakarta-sans/index.css";
+@import "~@fontsource/plus-jakarta-sans/700.css";
+@import "~@fontsource/montserrat/index.css";
+@import "~@fontsource/montserrat/700.css";
+@import "~@fontsource/montserrat/200.css";
 
 h1,h2,h3 {
   font-weight: 700;
-  font-family: 'Jakarta', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: $secondary;
 }
 
 h1 {
   font-size: $big-font-size;
 }
+h2 {
+  font-size: $large-font-size;
+}
 
 
 p {
+  font-weight: 200;
   font-family: 'Montserrat', sans-serif;
   font-size: $default-font-size;
 }
 a {
   font-family: 'Montserrat', sans-serif;
   font-size: $button-font-size;
+  text-decoration: none;
+  color: $off-white;
 }
 
 a,

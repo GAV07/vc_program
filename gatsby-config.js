@@ -10,19 +10,18 @@ module.exports = {
         `gatsby-plugin-sass`,
         `gatsby-plugin-react-helmet`,
         {
+          resolve: `gatsby-source-filesystem`,
+          options: {
+            name: `images`,
+            path: `${__dirname}/src/images`,
+          },
+        },
+        `gatsby-transformer-sharp`,
+        {
           resolve: `gatsby-plugin-sharp`,
           options: {
             icon: "../images/CFBI_logo.png"
           }
-        },
-        {
-            resolve: 'gatsby-plugin-web-font-loader',
-            options: {
-              custom: {
-                  families: 'Jakarta Sans',
-                  urls: './style/fonts'
-              }
-            }
         },
         {
           resolve: `gatsby-plugin-google-analytics`,

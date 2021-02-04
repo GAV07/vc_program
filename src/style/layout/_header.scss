@@ -1,29 +1,57 @@
-.header {
-    height: 10vh;
-    overflow: hidden;
+header {
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em 1em 2em;
+    background-color: transparent;
+    
 
-    &__bk {
-        position: absolute;
-        width: 100%;
-        background: linear-gradient($accent, #fff);
+    @include respond(phone) {
+        padding: 1em .5em;    
     }
 
-    &__nav {
-        position: absolute;
-        width: 100vw;
-        padding: 1em 0 1em 0;
-        text-decoration: none;
+
+    .logo {
+        width: 10em;
+        justify-self: flex-start;
+    }
+
+    nav {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        font-size: $button-font-size;
 
         a {
-            margin: 0 1em 0 1em;
-            color: $primary;
-            font-size: $default-font-size;
+            text-decoration: none;
+            font-size: $nav-font-size;
+            color: $secondary;
+            padding-right: 1em;
+        }
 
-            @include respond(phone) {
-                font-size: $mid-phone-size;
-            }
+        a:hover {
+            font-weight: 700;
         }
     }
+
+    .MuiButton-root {
+        font-size: 1.5rem;
+    }
+    
 }
+
+.MuiDrawer-root {
+    
+    .gatsby-image-wrapper {
+        width: 10em;
+        margin: 1em 0 10em 2em;
+    }
+    a {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 700;
+        color: $secondary;
+        padding: 0 1em 0 1em;
+    }
+}
+

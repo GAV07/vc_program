@@ -21,12 +21,28 @@
 
         h3 {
             @include respond(phone) {
-                font-size: $mid-phone-size;
+                font-size: $sm-phone-size;
             }
         }
 
+        .MuiAccordion-root:before {
+            opacity: 0;
+        }
+        .MuiAccordion-root:after {
+            content: "";
+            height: 1px;
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            right: 0;
+            background-color: $secondary;
+            opacity: .1;
+        }
+        .MuiPaper-elevation1 {
+            box-shadow: none;
+        }
         .MuiAccordionSummary-root {
-            padding: .5em 2em .5em 2em;
+            padding: 1em 2em .5em 2em;
         }
         .MuiAccordionDetails-root {
             padding: 0 20em 1em 2em;
@@ -36,9 +52,8 @@
             }
         }
         .MuiAccordionSummary-content.Mui-expanded {
+            margin: 0;
             h3 {
-                border-bottom: 1px solid;
-                padding-bottom: 1.5em;
                 margin: 0;
             }
         }

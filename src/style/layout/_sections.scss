@@ -12,7 +12,7 @@ body {
 
 section {
     padding: 3em;
-    overflow-x: hidden;
+    overflow: hidden;
 
     @include respond(phone) {
       padding: 0;
@@ -26,10 +26,32 @@ section {
       }
     }
 
+    h2 {
+
+      @include respond(phone) {
+        font-size: $mid-phone-size;
+      }
+    }
+
     p {
         @include respond(phone) {
-            font-size: $mid-phone-size;
+            font-size: $sm-phone-size;
         }
+    }
+
+    #name {
+      font-weight: 400;
+      color: $primary;
+    }
+
+    #watermark {
+      position: absolute;
+      transform-origin: center;
+      right: 10vw;
+      bottom: 35vh;
+      width: 30em;
+      opacity: .05;
+      z-index: -1;
     }
 
     

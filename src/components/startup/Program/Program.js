@@ -140,7 +140,7 @@ const Program = () => {
             <section className="program">
                 <div className="program__copy">
                     <h2>Program Schedule</h2>
-                    <p>Our program is broken into 8 weeks that focus on preparing you not only for VC funding but maximizing cusomter revenue so you can keep everything that you make.</p>
+                    <p>Our program is broken into 8 weeks that focus on preparing you not only for VC funding but maximizing cusomter revenue so you can keep you make.</p>
                 </div>
                 <Timeline align="alternate">
                 {

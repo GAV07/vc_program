@@ -1,21 +1,26 @@
 /* Call to Action Button */
 .cta-btn {
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+  padding: 1rem 2rem;
+  line-height: 1;
+  z-index: 1;
+  border-radius: .5em;
+  background-color: $primary;
+  color: $accent;
+}
+
+.cta-btn-alt {
+  font-weight: 400;
   display: inline-block;
   position: relative;
   padding: 1rem $default-font-size;
   line-height: 1;
   z-index: 1;
   border-radius: .5em;
-  background-color: $primary;
-
-
-  a {
-    font-size: $default-font-size;
-    text-decoration: none;
-    color: $off-white;
-  }
-
- 
+  background-color: $secondary;
+  color: $accent;
 }
 
 
