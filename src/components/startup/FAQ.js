@@ -33,7 +33,7 @@ const data = [
     },
     {
         "question":"When will I hear back about my application?",
-        "answer": "All decision will be sent by February 15, 2021. If you have questions about your application, feel free to reach out to us at info@cfbi.org"
+        "answer": "All decision will be sent by April 5, 2021. If you have questions about your application, feel free to reach out to us at info@cfbi.org"
     },
 ]
 
