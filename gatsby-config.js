@@ -2,7 +2,7 @@ module.exports = {
     siteMetadata: {
       title: "VC in Resdience Program",
       titleTemplate: "%s at the Center for Black Innovation",
-      description: "A landing page showing the benefits and details of the Center for Black Innovation's Pre-Accelerator",
+      description: "A landing page showing the benefits and details of the Center for Black Innovation's Accelerator",
       url: "vcinresidence.org",
       image: "./images/CFBI_logo.png"
     },

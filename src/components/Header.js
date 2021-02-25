@@ -54,7 +54,7 @@ const Header = () => {
                 </ListItem>
                 <ListItem button>
                     <ListItemText> 
-                        <Link to="/startup">Pre-Accelerator Program</Link>
+                        <Link to="/startup">Accelerator Program</Link>
                     </ListItemText>
                     </ListItem>
                 <ListItem button>
@@ -87,10 +87,10 @@ const Header = () => {
                     </Link>
                 </div>
                 <nav>
-                    <Link to="/startup">Pre-Accelerator Program</Link>
+                    <Link to="/startup">Accelerator Program</Link>
                     <Link to="/investor">Investor Academy</Link>
                 </nav>
-                <OutboundLink className="cta-btn" href="https://cfbi.typeform.com/to/orjd49ub">Pre-Accelerator Application</OutboundLink>
+                <OutboundLink className="cta-btn" href="https://cfbi.typeform.com/to/orjd49ub">Accelerator Application</OutboundLink>
             </header>
         )
     }

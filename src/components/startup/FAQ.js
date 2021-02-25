@@ -5,11 +5,11 @@ import { MdExpandMore } from 'react-icons/md'
 const data = [
     {
         "question":"How many hours do I need to commit?",
-        "answer": "Our pre-accelerator program features a self-paced online course; weekly masterminds and mentor sessions. Programming will be up to 15 hours per week."
+        "answer": "Our accelerator program features a self-paced online course; weekly masterminds and mentor sessions. Programming will be up to 15 hours per week."
     },
     {
         "question":"Are there any pre-requisites that must be completed before participation?",
-        "answer": "Participants in the pre-accelerator must have a registered business. The majority shareholders of that venture must be black entrepreneurs."
+        "answer": "Participants in the accelerator must have a registered business. The majority shareholders of that venture must be black entrepreneurs."
     },
     {
         "question":"Do you only work with tech companies?",

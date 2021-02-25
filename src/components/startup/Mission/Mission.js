@@ -8,7 +8,7 @@ const Mission = () => {
             <div className="mission__copy">
                 <h2>We guide entrepreneurs through pathways to capital</h2>
                 <p>
-                    The VCIR Pre-Accelerator is a program meant to level up the founders who have ventures they are passionate about.
+                    The VCIR Accelerator is a program meant to level up the founders who have ventures they are passionate about.
                     Before founders are ready to have capital conversations, their business must learn how to operate pre-capital.
                 </p>
             </div>

@@ -14,10 +14,10 @@ const Hero = () => {
             </svg>
             <div className="circle"></div>
             <div className="hero__copy">
-                <p id="name">Business Pre-Accelerator</p>
+                <p id="name">Business Accelerator</p>
                 <h1>Your Ideas Accelerated</h1>
                 <p>
-                    CFBI is seeking talented black founders to join the first cohort of our pre-accelerator program.  
+                    CFBI is seeking talented black founders to join the first cohort of our accelerator program.  
                 </p>
                 <h3>
                     Application deadline <br/> <span className="hero__copy__dates">March 26, 2021</span> 

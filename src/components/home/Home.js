@@ -23,7 +23,7 @@ const Hero = () => {
             </div>
             <div className="home__hero__ctas">
                 <div className="home__hero__ctas__cta">
-                    <h3>Pre-Accelerator Program</h3>
+                    <h3>Accelerator Program</h3>
                     <p>First cohort applications are open for entrepreneurs looking to join our tribe.</p>
                     <Link className="cta-btn-alt" to="/startup/">Learn More</Link>
                 </div>
