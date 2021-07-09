@@ -13,17 +13,18 @@ const Hero = () => {
                 </g>
             </svg>
             <div className="circle"></div>
+            <div className="circle circle-second"></div>
             <div className="hero__copy">
-                <p id="name">Business Accelerator</p>
-                <h1>Your Ideas Accelerated</h1>
+                <p id="name">Startup Accelerator</p>
+                <h1>Your Venture Cultivated</h1>
                 <p>
-                    CFBI is seeking talented black founders to join the first cohort of our accelerator program.  
+                    CFBI is seeking talented Black Founders to join our Second Cohort!  
                 </p>
                 <h3>
-                    Application deadline <br/> <span className="hero__copy__dates">March 26, 2021</span> 
+                    Application deadline: <br/> <span className="hero__copy__dates">September 6, 2021</span> 
                 </h3>
                 <h3>
-                Program Start <br/> <span className="hero__copy__dates">April 12, 2021</span> 
+                Program Start: <br/> <span className="hero__copy__dates">September 20, 2021</span> 
                 </h3>
                 <OutboundLink className="cta-btn" href="https://cfbi.typeform.com/to/orjd49ub">Apply Now</OutboundLink>
             </div>

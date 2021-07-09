@@ -4,7 +4,7 @@ module.exports = {
       titleTemplate: "%s at the Center for Black Innovation",
       description: "A landing page showing the benefits and details of the Center for Black Innovation's Accelerator",
       url: "vcinresidence.org",
-      image: "./images/CFBI_logo.png"
+      image: "./images/CFBI_favicon.png"
     },
     plugins: [
         `gatsby-plugin-sass`,
@@ -20,7 +20,7 @@ module.exports = {
         {
           resolve: `gatsby-plugin-sharp`,
           options: {
-            icon: "../images/CFBI_logo.png"
+            icon: "../images/CFBI_favicon.png"
           }
         },
         {

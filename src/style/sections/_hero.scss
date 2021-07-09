@@ -47,6 +47,8 @@
     
     &__image {
         width: 40em;
+        border-radius: 50%;
+       //  max-height: 20em;
     }
 
     .circle {
@@ -56,7 +58,11 @@
         width: 50em;
         height: 50em;
         border-radius: 50%;
-        background-color: $secondary;
+        border-style: solid;
+        border-color: white;
+        border-width: 5px;
+        z-index: 1;
+        transition: transform 250ms;
 
         @include respond(phone) {
             width: 20em;
@@ -65,6 +71,16 @@
             left: 50%;
             transform: translateY(-50%);
             background-color: $primary;
+        }
+
+        &-second {
+            transform: translateX(60%);
+            width: 60em;
+            height: 60em;
+        }
+
+        &:hover {
+            transform: scale(.1)
         }
     }
 

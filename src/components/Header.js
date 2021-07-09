@@ -53,7 +53,7 @@ const Header = () => {
                     </ListItemText>
                 </ListItem>
                 <ListItem button>
-                    <ListItemText> 
+                    <ListItemText > 
                         <Link to="/startup">Accelerator Program</Link>
                     </ListItemText>
                     </ListItem>
@@ -87,8 +87,8 @@ const Header = () => {
                     </Link>
                 </div>
                 <nav>
-                    <Link to="/startup">Accelerator Program</Link>
-                    <Link to="/investor">Investor Academy</Link>
+                    <Link className="link dia" to="/startup">Accelerator Program</Link>
+                    <Link className="link dia" to="/investor">Investor Academy</Link>
                 </nav>
                 <OutboundLink className="cta-btn" href="https://cfbi.typeform.com/to/orjd49ub">Accelerator Application</OutboundLink>
             </header>
