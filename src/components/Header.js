@@ -90,7 +90,7 @@ const Header = () => {
                     <Link className="link dia" to="/startup">Accelerator Program</Link>
                     <Link className="link dia" to="/investor">Investor Academy</Link>
                 </nav>
-                <OutboundLink className="cta-btn" href="https://cfbi.typeform.com/to/orjd49ub">Accelerator Application</OutboundLink>
+                <OutboundLink className="cta-btn" href="https://cfbi.typeform.com/to/FrtXprm9">Accelerator Application</OutboundLink>
             </header>
         )
     }
