@@ -40,17 +40,17 @@ const data = [
     {
         "week": "Week 4",
         "name": "Budgeting from the Ground Up",
-        "content": ""
+        "content": "Starting with very limited funds is the standard in entrepeneurship and even more so for Black Founders. This week we are strengthening Founders knowledge to reduce costs while leveraging limited resources."
     },
     {
         "week": "Week 5",
         "name": "Crafting a Narrative",
-        "content": "Win hearts, minds, and dollars with a compelling pitch and narrative for your venture. During this week entrepreneurs will learn how to craft their personal and startup narrative. "
+        "content": "Win hearts, minds, and dollars with a compelling pitch and narrative for your venture. During this week Founders will learn how to craft their personal and startup narrative. "
     },
     {
         "week": "Week 6",
         "name": "Let's Sale",
-        "content": ""
+        "content": "Getting value into a customers' hands is vital to start showing traction and generating revenue to bootstrap as you look for capital. Experts will be guiding Founders through creating pathways to their customers to lock in sales."
     },
     {
         "week": "Week 7",

@@ -62,7 +62,6 @@
         border-color: white;
         border-width: 5px;
         z-index: 1;
-        transition: transform 250ms;
 
         @include respond(phone) {
             width: 20em;
@@ -77,10 +76,6 @@
             transform: translateX(60%);
             width: 60em;
             height: 60em;
-        }
-
-        &:hover {
-            transform: scale(.1)
         }
     }
 
