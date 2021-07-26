@@ -30,7 +30,7 @@ const Image = ({query}) => {
           }
         }
       }
-      pitch: file(relativePath: { eq: "pitching.jpg" }) {
+      pitch: file(relativePath: { eq: "Chris.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid

@@ -29,37 +29,37 @@ const data = [
     },
     {
         "week": "Week 2",
-        "name": "Building a Boss Product/Service",
+        "name": "Building a Boss Product/Platform",
         "content": "Being in business is all about building products your users love! We’ll explore the basics of product development, design, customer feedback, and iteration."
     },
     {
         "week": "Week 3",
-        "name": "Acquiring Customers",
+        "name": "Understand and Attract Your Customers",
         "content": "This week is all about refining your brand’s unique value proposition and creating strategies to marketing that idea to the world."
     },
     {
         "week": "Week 4",
-        "name": "Business Ops 101",
-        "content": "From hiring to project management. Managing your operations sets your business up for greater success. We’ll be talking about building teams, management and leveraging data in your business."
+        "name": "Budgeting from the Ground Up",
+        "content": "Starting with very limited funds is the standard in entrepeneurship and even more so for Black Founders. This week we are strengthening Founders knowledge to reduce costs while leveraging limited resources."
     },
     {
         "week": "Week 5",
         "name": "Crafting a Narrative",
-        "content": "Win hearts, minds, and dollars with a compelling pitch and narrative for your venture. During this week entrepreneurs will learn how to craft their personal and startup narrative. "
+        "content": "Win hearts, minds, and dollars with a compelling pitch and narrative for your venture. During this week Founders will learn how to craft their personal and startup narrative. "
     },
     {
         "week": "Week 6",
+        "name": "Let's Sale",
+        "content": "Getting value into a customers' hands is vital to start showing traction and generating revenue to bootstrap as you look for capital. Experts will be guiding Founders through creating pathways to their customers to lock in sales."
+    },
+    {
+        "week": "Week 7",
         "name": "Generating Financing Options",
         "content": "Accessing funding for your ideas will help lay the foundation for your success. We’ll cover due diligence, meeting investors, and negotiating equity."
     },
     {
-        "week": "Week 7",
-        "name": "Diving into your Industry",
-        "content": "Advantages for our businesses lie in understanding the contours of the industries we operate within. We will provide resources and advisors to help guide you into deeper domain knowledge depending on your chosen industry."
-    },
-    {
         "week": "Week 8",
-        "name": "Grow Week",
+        "name": "Promotion Week",
         "content": "We have put in a lot of work these last few weeks getting up to speed with every aspect of our business now it time to execute on your business and market strategy!"
     },
 ]
