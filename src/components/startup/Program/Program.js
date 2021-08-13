@@ -34,22 +34,22 @@ const data = [
     },
     {
         "week": "Week 3",
-        "name": "Understand and Attract Your Customers",
+        "name": "Understanding and Attracting Your Customers",
         "content": "This week is all about refining your brand’s unique value proposition and creating strategies to marketing that idea to the world."
     },
     {
         "week": "Week 4",
-        "name": "Budgeting from the Ground Up",
-        "content": "Starting with very limited funds is the standard in entrepeneurship and even more so for Black Founders. This week we are strengthening Founders knowledge to reduce costs while leveraging limited resources."
+        "name": "Building a Team and Growing Your Operations",
+        "content": "Understand what gap exist in your venture and determine the best approaches to growing out your team as you grow your business."
     },
     {
         "week": "Week 5",
-        "name": "Crafting a Narrative",
+        "name": "Crafting a Narrative and Pitching",
         "content": "Win hearts, minds, and dollars with a compelling pitch and narrative for your venture. During this week Founders will learn how to craft their personal and startup narrative. "
     },
     {
         "week": "Week 6",
-        "name": "Let's Sale",
+        "name": "Creating Partnerships and Generating Sales",
         "content": "Getting value into a customers' hands is vital to start showing traction and generating revenue to bootstrap as you look for capital. Experts will be guiding Founders through creating pathways to their customers to lock in sales."
     },
     {
